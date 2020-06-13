@@ -55,6 +55,8 @@ case "$1" in
             echo '# sets the shared secret used to authenticate to the XMPP server' >> $CONFIG
             echo "JVB_SECRET=$JVB_SECRET" >> $CONFIG
             echo >> $CONFIG
+            echo '# memory settings' >> $CONFIG
+            echo "JVB_MEMORY=\"-Xmx3072m\"" >> $CONFIG
             echo '# extra options to pass to the JVB daemon' >> $CONFIG
             echo "JVB_OPTS=\"--apis=,\"" >> $CONFIG
             echo >> $CONFIG
